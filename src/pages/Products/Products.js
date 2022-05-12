@@ -8,7 +8,7 @@ import useFetch from '../../hooks/useFetch/useFetch';
 import Loading from '../../components/Loading/Loading';
 // import {ViewPropTypes} from 'deprecated-react-native-prop-types'; // ...
 import Error from '../../components/Error/Error';
-
+import { useDispatch, useSelector } from 'react-redux';
 
 
 const Products = ({navigation,route}) => {
@@ -37,8 +37,9 @@ const Products = ({navigation,route}) => {
 //   console.log({loading, error, data:data.length} )
 //   console.log("---------------------------------")
 
-  const {error,data,loading} = useFetch(Config.API_URL)
-
+  // const dispatch = useDispatch()
+  const {error,data,loading} = useFetch(Config.API_PRODUCT_URL)
+  const user = useSelector(s => s.user)
   const handleProductSelect= (id) => {
       navigation.navigate("DetailPage",{id})
 
@@ -56,6 +57,8 @@ const Products = ({navigation,route}) => {
   return (
 
     <View style={styles.container}>
+      {/* <Button title='Logout' onPress={() => dispatch({type:"SET_USER", payload:{user:null}})} color="orange" /> */}
+      {/* <Text style={{fontSize:20,color:"#000",textAlign:"center",}}>Hello {user.name.firstname}</Text> */}
       <FlatList data={data} renderItem={renderProduct} />
     </View>
 

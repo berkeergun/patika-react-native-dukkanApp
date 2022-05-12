@@ -6,7 +6,7 @@ const Loading = () => {
   return (
     <View style={styles.container}>
       {/* <LottieView source={require("../../assets/loading.json")} autoPlay />  Çalışmıyor, silindi...  */}
-      <ActivityIndicator style={styles.loading} size="large" />
+      <ActivityIndicator style={styles.loading} size="large" color="white" />
 
     </View>
   )
@@ -17,7 +17,8 @@ export default Loading
 const styles = StyleSheet.create({
     container:{
         flex:1,
-        backgroundColor:"#DAFAF8",
+        // backgroundColor:"#DAFAF8",
+        backgroundColor:"#FCD63B",
         justifyContent:"center",
         alignItems:"center"
     },

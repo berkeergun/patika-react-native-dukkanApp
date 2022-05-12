@@ -3,6 +3,13 @@ apply from: project(':react-native-config').projectDir.getPath() + "/dotenv.grad
 import com.android.build.OutputFile
 import org.apache.tools.ant.taskdefs.condition.Os
 
+//sonradan eklendi
+project.ext.vectoricons = [
+    iconFontNames: [ 'MaterialCommunityIcons.ttf'] // Name of the font files you want to copy
+]
+
+apply from: "../../node_modules/react-native-vector-icons/fonts.gradle"
+
 /**
  * The react.gradle file registers a task for each build variant (e.g. bundleDebugJsAndAssets
  * and bundleReleaseJsAndAssets).

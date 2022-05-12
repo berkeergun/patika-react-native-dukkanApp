@@ -5,7 +5,8 @@ const deviceSize = Dimensions.get("window")
 export default StyleSheet.create({
     container:{
         flex:1,
-        backgroundColor:"#DAFAF8"
+        // backgroundColor:"#DAFAF8",
+        backgroundColor:"#ffe375",
     },
     body_container:{
         padding:10,

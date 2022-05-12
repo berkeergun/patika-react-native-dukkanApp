@@ -6,7 +6,7 @@ const Welcome = ({navigation}) => {
   return (
     <View style={styles.container}>
       <Text style={styles.text}>Welcome To dukkan App</Text>
-      <TouchableOpacity style={styles.button} onPress={() => navigation.navigate("ProductsPage")}>
+      <TouchableOpacity style={styles.button} onPress={() => navigation.navigate("LoginPage")}>
           <Text style={styles.button_text}>Let's take a look at the products!</Text>
       </TouchableOpacity>
     </View>

@@ -1,5 +1,5 @@
 # dukkan App
-![1](./images/1.png)
+![1](./images/2.png)
 
 ## <font color="orange">Device</font> => <font color="yellow"> Pixel 3a</font>
 - <font color="pink">Width</font> => <font color="yellow">392.72</font>
